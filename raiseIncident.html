@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raise an Incident</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="raiseIncident.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
-<body>
+<body class="raiseIncident-body">
 
-<!-- Add a Nav section here? -->
+<!-- Nav section -->
+
+<nav>
+    <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+        
+        <div class="navbar-right">
+            <a href="#">Sign up</a>
+            <a href="#">Logon</a>
+        </div>
+    </div>
+</nav>
 
 <main>
-
 <!-- Header Section -->
     <header>
         <h1> Incident Form</h1>
@@ -26,28 +39,31 @@
     <section>
         <div>
             <form action="">
-                <fieldset style="display: flex; flex-direction: column; width: 80%; margin: 0 auto; border: 2px solid red;">
-                    <h3>Fill out the form below:</h3>
-                    <h4>Contact us today, and we aim to get back to you within 24 hours.</h4>
+                <fieldset>
+                    <div class="form-text">
+                        <h3>Fill out the form below:</h3>
+                        <h4>Contact us today, and we aim to get back to you within 24 hours.</h4>
+                    </div>
 
-                    <label for="" style="display: flex; flex-direction: column; margin-top: 15px;"> Firstname:
-                        <input type="firstname" style="width: 400px; margin-top: 5px;">
+                    <label for=""> Firstname:
+                        <input type="firstname" name="" id="">
                     </label>
 
-                    <label for="" style="display: flex; flex-direction: column; margin-top: 15px;"> LastName:
-                        <input type="lastname" style="width: 400px; margin-top: 5px;">
+                    <label for=""> LastName:
+                        <input type="lastname" name="" id="">
                     </label>
                     
-                    <label for="" style="display: flex; flex-direction: column; margin-top: 15px;"> Email:
-                        <input type="email" style="width: 400px; margin-top: 5px;">
+                    <label for=""> Email:
+                        <input type="email" name="" id="">
                     </label>
 
                     <!-- <label for="" style="display: flex; flex-direction: column; margin-top: 15px;"> Issue:
                         <input type="subject" style="width: 400px;">
                     </label> -->
                     
-                    <label for="" style="display: flex; flex-direction: column; margin-top: 15px;"> Issue:
-                        <select name="incidents" id="" style="width: 408px; margin-top: 5px;">
+                    <label for=""> Issue:
+                        <select name="incidents" id="">
+                            <option value="">N/A</option>
                             <option value="">technical issue</option>
                             <option value="">performance issue</option>
                             <option value="">licence issue</option>
@@ -55,22 +71,30 @@
                         </select>
                     </label>
 
-                    <label for="" style="display: flex; flex-direction: column; margin-top: 15px;"> Message:
+                    <label for=""> Message:
                         <textarea name="" id="" cols="30" rows="10" style="margin-top: 5px;" placeholder="Please describe your issue in as much detail as possible to help our analysts triage your issue."></textarea>
                     </label>
                     
-                    <input type="button" value="submit" style=" margin: 0 auto; margin-top: 30px; width: 100px;">
+                    <input type="button" value="Submit" class="sm-btn">
+
+                    <div class="form-text">
+                        <h3>Please ensure no fields are left empty,
+                            Add some info here regarding SLA's and time to reach person via email reply etc...
+                        </h3>
+                    </div>
                 </fieldset>
             </form>
         </div>
     </section>
 
 <!-- Supplementary text for form -->
-    <section>
-        <h3>Please ensure no fields are left empty,
-            Add some info here regarding SLA's and time to reach person via email reply etc...
-        </h3>
-    </section>
+    <!-- <section>
+        <div class="form-footer">
+            <h3>Please ensure no fields are left empty,
+                Add some info here regarding SLA's and time to reach person via email reply etc...
+            </h3>
+        </div>
+    </section> -->
 </main>
 
 <!-- Footer Section here -->

@@ -1,0 +1,102 @@
+@import './variables';
+@import './layout';
+
+// Tomorrows Objectives !!
+
+// The idea is to clean the input and turn into classes.
+// Possibly sort out the width of the input buttons as they're too wide at full screen.
+// mobile length is fine, maybe include a media query to mitigate.
+// play with the fieldset, give it a 3d effect. Done
+// media query test does work, play around and see best options !! Kind of
+
+// Decide on submit button styling...
+// Work on way to make font uniform but via one setting, maybe multiplte styles like under label,input { property } etc...
+// start working on creating the faq pages...
+
+// What have i learnt? You can use the body as a class to keep css styling on pages different !!!
+    // Keeping a footer stuck to bottom.
+    // Flexbox and responsive design.
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+
+    h1, h3 {
+        margin-top: 0px;
+        
+    }
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    border: 2px solid #333;
+    box-shadow: 2px -2px 10px 2px #333; // box shaddow effect
+    background-color: black;
+    margin-bottom: 25px; // used to space from footer
+    
+}
+
+label {
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 15px;
+}
+
+input {
+    padding: 5px;
+    margin-top: 7.5px;
+    // font-family: $bodyDefaultFont;
+    font-size: 16px;
+}
+
+select {
+    padding: 5px;
+    width: 100%; 
+    margin-top: 5px;
+    // font-family: $bodyDefaultFont;
+    font-size: 16px;
+}
+
+textarea {
+    padding: 10px;
+    // font-family: $bodyDefaultFont;
+    font-size: 16px;
+}
+
+.sm-btn {
+    margin: 0 auto; 
+    margin-top: 30px;
+    margin-bottom: 30px; // decide to keep
+    width: 25%;
+    padding: 5px;
+
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+// Media Query Test..
+
+@media (max-width: 576px) {
+
+
+    fieldset {
+        width: 400px;
+
+    }
+
+    select {
+        margin-top: 5px;
+    }
+    
+
+}

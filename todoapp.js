@@ -22,7 +22,7 @@
 // while loop
 // let input = prompt(`Todo App Options: new, delete, list, quit ${todo}`)
 
-// while(todo) {
+// while(input !== "quit") {
 
 //     if (todo === "new") { 
 //         prompt(`Add to list: ${todo.push()}`)
@@ -107,7 +107,7 @@ let input = prompt("Todo hit enter to continue..")
 
 while(input !== "q") {
 
-        input = prompt("Type the following to continue - view new delete quit")
+        input = prompt("Type the following to continue - quit | view | new | delete | deleteM | length | first | last ")
 
     if (input === "view") {
         for (let i = 0; i < array.length; i ++) {
@@ -116,19 +116,46 @@ while(input !== "q") {
     }
 
     if (input === "new") {
-        input = array.push(prompt("new item to array"));
+        input = array.push(prompt("Add a new item to array"));
         console.log(`${array[array.length -1]} has been added.`)
     }
 
     if (input === "delete") {
-        input = array.pop()
+        input = array.pop(prompt("You will be deleting the last item entered, type delete again."))
         console.log(`${array[array.length -1]} has been deleted.`)
     }
+ 
     // work on using splice to delete items !!!
-    
+    if (input === "deleteM") {
+        for (let i = 0; i < array.length; i ++) {
+            console.log(i, array[i])         
+        }
+        input = array.splice(prompt("Specify the array index you want to delete.."))
+        for (let i = 0; i < array.length; i ++) {
+            console.log(i, array[i])         
+        }
+    }
+
+    // todo length
+
+    if (input === "length") {
+        input = array.length
+        console.log(`Your list now includes ${array.length} items.`)
+    }
 
     // first todo item
+
+    if (input === "first") {
+        input = array[0]
+        console.log(`the first item in the array is: ${array[0]}`)
+    }
+
     // last item entered in todo
-    // todo length
+
+    if (input === "last") {
+        input = array[array.length -1]
+        console.log(`${array[array.length -1]} is the last item in the array.`)
+    }
+
 }
 console.log("we have exited..")
