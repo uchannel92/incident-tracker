@@ -25,3 +25,18 @@
     height: 92vh;
     margin: 0px; // Sort out why margin on right is not margining!
 }
+
+.faqs-body {
+    color: $fontColorAll;
+    background-color:lightgrey;
+    font-family: $bodyDefaultFont;
+    height: 100vh;
+    margin: 0px; // Sort out why margin on right is not margining!
+}
+
+
+// default footer for all pages, not the main index page..
+
+.footer {
+    background-color: darkgray;
+}

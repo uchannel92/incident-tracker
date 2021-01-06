@@ -19,6 +19,18 @@
   margin: 0px;
 }
 
+.faqs-body {
+  color: #f5f5f5;
+  background-color: lightgrey;
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  margin: 0px;
+}
+
+.footer {
+  background-color: darkgray;
+}
+
 .index-body {
   color: #f5f5f5;
   background-color: #333;

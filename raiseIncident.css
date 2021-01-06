@@ -19,7 +19,20 @@
   margin: 0px;
 }
 
+.faqs-body {
+  color: #f5f5f5;
+  background-color: lightgrey;
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  margin: 0px;
+}
+
+.footer {
+  background-color: darkgray;
+}
+
 header {
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,10 +47,12 @@ header {
 }
 
 header h1, header h3 {
+  font-size: 24px;
   margin-top: 0px;
 }
 
 fieldset {
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,14 +62,14 @@ fieldset {
           flex-direction: column;
   width: 500px;
   margin: 0 auto;
-  border: 2px solid #333;
-  -webkit-box-shadow: 2px -2px 10px 2px #333;
-          box-shadow: 2px -2px 10px 2px #333;
-  background-color: black;
+  border: 1px solid darkgrey;
+  -webkit-box-shadow: 0px 0px 12px 1px  #333;
+          box-shadow: 0px 0px 12px 1px  #333;
+  background-color: white;
   margin-bottom: 25px;
 }
 
-label {
+fieldset label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,33 +80,44 @@ label {
   margin-top: 15px;
 }
 
-input {
+fieldset input {
   padding: 5px;
   margin-top: 7.5px;
   font-size: 16px;
 }
 
-select {
+fieldset select {
   padding: 5px;
   width: 100%;
   margin-top: 5px;
   font-size: 16px;
 }
 
-textarea {
+fieldset textarea {
   padding: 10px;
   font-size: 16px;
 }
 
-.sm-btn {
+fieldset .sm-btn {
+  background-color: #DC7300;
+  border: solid #DC7300;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 30px;
   width: 25%;
   padding: 5px;
+  outline: none;
 }
 
-.form-text {
+fieldset .sm-btn:hover {
+  border: solid #db7f1c;
+  background-color: #db7f1c;
+}
+
+fieldset .form-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,6 +128,14 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+fieldset .form-text h4 {
+  font-size: 0.8em;
+}
+
+fieldset .form-text h4 span {
+  text-decoration: underline;
 }
 
 @media (max-width: 576px) {

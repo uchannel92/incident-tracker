@@ -45,60 +45,46 @@
                         <h4>Contact us today, and we aim to get back to you within 24 hours.</h4>
                     </div>
 
-                    <label for=""> Firstname:
-                        <input type="firstname" name="" id="">
+                    <label for=""> <!-- Firstname: -->
+                        <input type="firstname" name="" id="" placeholder="Enter First Name">
                     </label>
 
-                    <label for=""> LastName:
-                        <input type="lastname" name="" id="">
+                    <label for=""> <!-- LastName: -->
+                        <input type="lastname" name="" id="" placeholder="Enter Last Name">
                     </label>
                     
-                    <label for=""> Email:
-                        <input type="email" name="" id="">
+                    <label for=""> <!--  Email: -->
+                        <input type="email" name="" id="" placeholder="Enter Email">
                     </label>
 
-                    <!-- <label for="" style="display: flex; flex-direction: column; margin-top: 15px;"> Issue:
-                        <input type="subject" style="width: 400px;">
-                    </label> -->
-                    
-                    <label for=""> Issue:
-                        <select name="incidents" id="">
-                            <option value="">N/A</option>
-                            <option value="">technical issue</option>
-                            <option value="">performance issue</option>
-                            <option value="">licence issue</option>
+                    <label for=""> <!-- Issue: -->
+                        <select name="incidents" id="" placeholder="Enter Email">
+                            <option value="" selected disabled>Select issue from dropdown</option>
+                            <option value="">Technical issue</option>
+                            <option value="">Performance issue</option>
+                            <option value="">Licence issue</option>
                             <option value="">Other (state in message)</option>
                         </select>
                     </label>
 
-                    <label for=""> Message:
+                    <label for=""> <!-- Message: -->
                         <textarea name="" id="" cols="30" rows="10" style="margin-top: 5px;" placeholder="Please describe your issue in as much detail as possible to help our analysts triage your issue."></textarea>
                     </label>
                     
                     <input type="button" value="Submit" class="sm-btn">
 
                     <div class="form-text">
-                        <h3>Please ensure no fields are left empty,
-                            Add some info here regarding SLA's and time to reach person via email reply etc...
-                        </h3>
+                        <h4> Please ensure no fields are left empty, failure to do so will mean <span> automatically closing the ticket.. </span></h4>
                     </div>
                 </fieldset>
             </form>
         </div>
     </section>
 
-<!-- Supplementary text for form -->
-    <!-- <section>
-        <div class="form-footer">
-            <h3>Please ensure no fields are left empty,
-                Add some info here regarding SLA's and time to reach person via email reply etc...
-            </h3>
-        </div>
-    </section> -->
 </main>
 
 <!-- Footer Section here -->
-<footer>
+<footer class="footer">
     <div>
         <span><p>A December 2020 Production desigend by <a href="#index">Uchenna Attah</a> all rights reserved &COPY; </p></span>
     </div>
