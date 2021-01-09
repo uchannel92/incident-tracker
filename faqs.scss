@@ -6,3 +6,79 @@
 // container with margin on the sides?
 // few paragraphs
 // add more to here from tomorrorw! the link has been saved in the faqs.html page.
+
+
+// faq page basically complete
+// work on faq page having similar bold text, italics, numbered lists like https://thesolesupplier.co.uk/privacy-policy
+// tidy up css on this and index page, tehn work on raisIncident.
+// copy the table from C:\Users\uattah\Downloads\Repository\Sublime text editor\Colt Steele Bootcamp\html - module
+// use this as a guide to show you can add a table... styling to make it look dece
+
+// work on creating my on table like the index page.
+// looks as though working on font-size is very very limited...
+// i have learnt that you can add a sidebar scroll to the overview on table - by adding the following to a div covering the table tag - <div style="overflow-x:auto">
+
+header {
+    margin-top: 70px; // used to push down content from the sticky nav..
+    display: flex;
+    justify-content: center;
+    h1 {
+        margin-bottom: 0px;
+    }
+}
+
+main {
+    margin-bottom: 30px;
+}
+
+.faq-main-container {
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    padding-top: 15px;
+    padding-bottom: 15px; // to add space to bottom of container.
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 3px;
+    width: 50%;
+    height: 100%;
+    color: black;
+
+    
+    hr {
+        width: 85%;
+    }
+    
+}
+
+section {
+    h3 {
+        text-align: center;
+    }
+}
+
+section {
+    ol {
+        margin-top: 8px;
+        list-style-type: lower-roman;
+    }
+}
+
+// Media Query..
+
+@media (max-width: 576px) {
+
+    .faq-main-container {
+        margin: 0 auto;
+        width: 95%;
+        padding-top: 15px;
+        padding-bottom: 15px; // to add space to bottom of container.
+        padding-left: 0px;
+        padding-right: 0px;
+        border-radius: 3px;
+        
+    }
+
+    tbody {
+        font-size: 5px;
+    }
+}
