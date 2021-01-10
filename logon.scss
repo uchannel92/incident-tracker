@@ -12,13 +12,16 @@ body {
 
 
 .logon-section {
-    margin-top: 70px;
+    // margin-top: 70px; // default margin top testing the below
+    margin-top: 150px;
 
 }
 
 fieldset {
     margin: 0 auto;
     background-color:  $optionsBgColor;
+    border-radius: 9px;
+    border: 1px solid black;
     width: 300px;
  }
 
@@ -42,7 +45,7 @@ fieldset {
         justify-content: center;
         margin-top: 15px;
         margin-bottom: 15px;
-        border: 1px solid white;
+        // border: 1px solid black;
         border-radius: 99999px;
         padding: 35px;
     

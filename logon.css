@@ -19,6 +19,14 @@
   margin: 0px;
 }
 
+.viewIncident-body {
+  color: #f5f5f5;
+  background-color: lightgrey;
+  font-family: "Nunito", sans-serif;
+  height: 92vh;
+  margin: 0px;
+}
+
 .faqs-body {
   color: #f5f5f5;
   background-color: lightgrey;
@@ -31,7 +39,7 @@
   color: #f5f5f5;
   background-color: lightgrey;
   font-family: "Nunito", sans-serif;
-  height: 92vh;
+  height: 84.3vh;
   background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1052&q=80);
   background-position: center;
   background-size: cover;
@@ -49,12 +57,14 @@ body {
 }
 
 .logon-section {
-  margin-top: 70px;
+  margin-top: 150px;
 }
 
 fieldset {
   margin: 0 auto;
   background-color: rgba(113, 119, 144, 0.7);
+  border-radius: 9px;
+  border: 1px solid black;
   width: 300px;
 }
 
@@ -93,7 +103,6 @@ fieldset {
           justify-content: center;
   margin-top: 15px;
   margin-bottom: 15px;
-  border: 1px solid white;
   border-radius: 99999px;
   padding: 35px;
 }
