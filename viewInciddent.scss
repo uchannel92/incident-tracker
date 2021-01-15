@@ -4,4 +4,26 @@
 .test {
     margin-top: 70px;
     text-align: center;
+
+    img {
+        height:500px ;
+        width:900px ;
+    }
+}
+
+
+// Media queries..
+
+@media (max-width: 576px) {
+
+    .test {
+        margin-top: 70px;
+        text-align: center;
+    
+        img {
+            height:300px ;
+            width:450px ;
+        }
+    }
+    
 }

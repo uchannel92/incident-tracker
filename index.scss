@@ -144,31 +144,31 @@ footer {
 
 
 .incident-icon {
-  color: #82D173;
-  background-color: #f5f5f5;
+  color: $faIconColor;
+  background-color: $faBgColorIncFaq;
   padding: 10px;
   border-radius: 50%;
 }
 
 
 .viewINC-icon {
-  color: white;
-  background-color: #7EBDC2;
+  color: $faIconColor;
+  background-color: $faViewIncBgColor;
   padding: 10px;
   border-radius: 50%;
 }
 
 .warning-icon {
-  color: white;
-  background-color: #feca1d;
+  color: $faIconColor;
+  background-color: $faWarningBgColor;
   padding: 10px;
   border-radius: 50%;
 
 }
 
 .faq-icon {
-  color: white;
-  background-color: #82D173;
+  color: $faIconColor;
+  background-color: $faBgColorIncFaq;
   padding: 10px;
   border-radius: 50%;
 }

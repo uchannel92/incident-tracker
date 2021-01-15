@@ -1,5 +1,6 @@
 @import './variables';
 @import './layout';
+@import './components';
 
 // Tomorrows Objectives !!
 
@@ -69,25 +70,6 @@ fieldset {
         padding: 10px;
         // font-family: $bodyDefaultFont;
         font-size: 16px;
-    }
-    
-    .sm-btn {
-        background-color: #DC7300;
-        border: solid #DC7300;
-        border-radius: 5px;
-        color: white;
-        text-transform: uppercase;
-        margin: 0 auto; 
-        margin-top: 15px;
-        margin-bottom: 30px; // decide to keep
-        width: 25%;
-        padding: 5px;
-        outline: none;
-        
-        &:hover {
-            border: solid #db7f1c;
-            background-color: #db7f1c;
-        }
     }
     
     .form-text {

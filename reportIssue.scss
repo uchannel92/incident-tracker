@@ -1,0 +1,72 @@
+@import './variables';
+@import './layout';
+@import './components';
+
+// work on styling from raise incident. I should be able to reuse as much code as possible.
+// select dropdown for menu needs to expanded on. add two options and check SF for ideas..
+
+header {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+
+    h1, h3 {
+        font-size: 24px;
+        margin-top: 0px;
+        
+    }
+
+    span {
+        font-size: 1.7em; 
+        color: $warningSymColor;
+    }
+}
+
+fieldset {
+    color: $formTextColor;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid darkgrey;
+    border-radius: 9px;
+    box-shadow: 0px 0px 2px 1px  #333; // box shaddow effect
+    // box-shadow: 0px 0px 12px 1px  #333; // box shaddow effect exagerated..
+    background-color: white;
+    margin-bottom: 25px; // used to space from footer
+
+
+    label {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    input {
+        padding: 5px;
+        margin-top: 7.5px;
+        font-size: 16px;
+    }
+
+    select {
+        padding: 5px;
+        width: 100%; 
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    
+    textarea {
+        margin-top: 15px;
+    }
+}
+
+// Media Queries...
+
+@media (max-width: 576px) {
+
+    fieldset {
+        width: 400px;
+    }
+}

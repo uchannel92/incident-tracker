@@ -38,6 +38,17 @@
 }
 
 
+// report issue page
+
+.reportIssue-body {
+    color: $fontColorAll;
+    background-color:lightgrey;
+    font-family: $bodyDefaultFont;
+    height: 92.5vh;
+    margin: 0px; // Sort out why margin on right is not margining!
+}
+
+
 // faqs page
 
 .faqs-body {

@@ -10,11 +10,32 @@ $navBarBgHoverColor: black;
 $navBarTextColor: #f5f5f5;
 
 
-// Section 2 content variables 
-
+// Index page variables.
+// index.html Section 2 content variables 
 $optionsBgColor: rgba(113, 119, 144,0.7);
+
+    // index.html section 2 fa icons
+    $faIconColor:#f5f5f5;
+    $faBgColorIncFaq:#82D173;
+    $faWarningBgColor: #feca1d;
+    $faViewIncBgColor: #7EBDC2;
+   
+
+// Forms: Raise incident | View Incident | Logon | Report an Issue
+
+$submitBtnColor: #DC7300;
+$submitBtnColorHover: #db7f1c;
 
 
 // Footer variables
 
 $footerAnchorTagColor:#feca1d;
+
+// Faqs.scss variables
+$faqContentBgColor: #f5f5f5;
+$faqMainFontColor: black;
+
+
+// reportissue.scss variables
+$warningSymColor: #feca1d;
+$formTextColor:  black;

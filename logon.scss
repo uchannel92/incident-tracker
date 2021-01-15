@@ -5,6 +5,7 @@
 
 @import './variables';
 @import './layout';
+@import './components';
 
 body {
     margin: 0px;
@@ -40,12 +41,10 @@ fieldset {
         i {
           font-size: 5em;
           background-color:  $optionsBgColor;
-        // width: 90px;
         display: flex;
         justify-content: center;
         margin-top: 15px;
         margin-bottom: 15px;
-        // border: 1px solid black;
         border-radius: 99999px;
         padding: 35px;
     
@@ -59,22 +58,4 @@ fieldset {
 
     }
 
-    .sm-btn {
-        background-color: #DC7300;
-        border: solid #DC7300;
-        border-radius: 5px;
-        color: white;
-        text-transform: uppercase;
-        margin: 0 auto; 
-        margin-top: 15px;
-        margin-bottom: 30px; // decide to keep
-        width: 25%;
-        padding: 5px;
-        outline: none;
-        
-        &:hover {
-            border: solid #db7f1c;
-            background-color: #db7f1c;
-        }
-    }
 }

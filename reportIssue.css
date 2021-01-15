@@ -79,25 +79,8 @@
   background-color: #db7f1c;
 }
 
-body {
-  margin: 0px;
-}
-
-.logon-section {
-  margin-top: 150px;
-}
-
-fieldset {
-  margin: 0 auto;
-  background-color: rgba(113, 119, 144, 0.7);
-  border-radius: 9px;
-  border: 1px solid black;
-  width: 300px;
-}
-
-.logon-subSection {
-  margin: 0 auto;
-  width: 300px;
+header {
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,35 +91,71 @@ fieldset {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 25px;
 }
 
-.logon-subSection span {
+header h1, header h3 {
+  font-size: 24px;
+  margin-top: 0px;
+}
+
+header span {
+  font-size: 1.7em;
+  color: #feca1d;
+}
+
+fieldset {
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid darkgrey;
+  border-radius: 9px;
+  -webkit-box-shadow: 0px 0px 2px 1px  #333;
+          box-shadow: 0px 0px 2px 1px  #333;
+  background-color: white;
+  margin-bottom: 25px;
 }
 
-.logon-subSection span i {
-  font-size: 5em;
-  background-color: rgba(113, 119, 144, 0.7);
+fieldset label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border-radius: 99999px;
-  padding: 35px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.logon-subSection input {
+fieldset input {
   padding: 5px;
   margin-top: 7.5px;
   font-size: 16px;
 }
-/*# sourceMappingURL=logon.css.map */
+
+fieldset select {
+  padding: 5px;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+fieldset textarea {
+  margin-top: 15px;
+}
+
+@media (max-width: 576px) {
+  fieldset {
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=reportIssue.css.map */
